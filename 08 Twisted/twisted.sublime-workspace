@@ -7,14 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "simple_server.py",
-			"settings":
-			{
-				"buffer_size": 728,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -69,6 +61,7 @@
 	],
 	"file_history":
 	[
+		"/home/fauzan/Documents/NetProg2017/08 Twisted/zztwisted.sublime-project",
 		"/home/fauzan/Documents/NetProg2017/08 Twisted/twisted_http_server.py",
 		"/home/fauzan/Documents/NetProg2017/08 Twisted/tryna.py",
 		"/home/fauzan/Documents/NetProg2017/08 Twisted/import.py",
@@ -114,39 +107,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "simple_server.py",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 728,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -156,7 +118,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 66.0
 	},
 	"layout":
 	{
@@ -219,6 +181,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"~/Documents/NetProg2017/08 Twisted/zztwisted.sublime-project"
+			]
 		],
 		"width": 380.0
 	},
