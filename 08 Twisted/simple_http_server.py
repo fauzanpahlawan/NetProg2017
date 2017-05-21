@@ -1,30 +1,3 @@
-simple_http_server.py
-DETAILS
-ACTIVITY
-Sharing Info
-Not shared
-General Info
-Type
-Text
-Size
-2 KB (2,090 bytes)
-Storage used
-4 KB (3,813 bytes)
-Location
-08 Twisted
-Owner
-me
-Modified
-5:45 pm by me
-Opened
-8:10 pm by me
-Created
-14 May 2017 with Google Drive Web
-Description
-Add a description
-Download permissions
-Viewers can download
-
 from twisted.internet import reactor, protocol
 from twisted.protocols.basic import LineReceiver
 
