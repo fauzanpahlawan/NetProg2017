@@ -29,11 +29,14 @@ class echoServer(LineReceiver):
         # After read header
         if not data:
             self.first_line = True
+            # make a condition if the request was GET
             if self.method == "GET":
                 print str(self.content_length) + " Content-Length"
                 body = "Hello darkness"
                 content_len = len(body)
                 self.sendResponse(body)
+            # to handle POST request which contain content we need to read with
+            # rawmode.
             elif self.method == "POST":
                 # reset contentS
                 self.content = ''

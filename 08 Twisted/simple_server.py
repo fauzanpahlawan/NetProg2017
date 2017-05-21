@@ -1,14 +1,14 @@
 from twisted.internet import protocol, reactor
 
-# Definisikan class untuk protocol yg akan kita buat
+# define a protocol handling class
 
 
 class EchoServer(protocol.Protocol):
-    # Callback func ketika koneksi berhasil dibuat
+    # Callback func when connection established
     def connectionMade(self):
-        print "Koneksi baru berhasil dibuat"
+        print "New connection established."
 
-    # Callback func ketika ada message masuk dari client
+    # Callback func when client seding a message
     def dataReceived(self, data):
         print data
         data = "OK " + data
@@ -20,5 +20,8 @@ class EchoFactory(protocol.Factory):
     def buildProtocol(self, address):
         return EchoServer()
 
+# reactor so our server will listen on port 7777, and create an instance
+# of server with EchoFactory
 reactor.listenTCP(7777, EchoFactory())
+# finally run the server
 reactor.run()
