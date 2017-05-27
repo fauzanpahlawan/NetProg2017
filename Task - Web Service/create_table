@@ -1,0 +1,24 @@
+CREATE TABLE EMPLOYEE(
+	ID INT PRIMARY KEY NOT NULL,
+	NAME TEXT NOT NULL,
+	POSITION TEXT NOT NULL,
+	ADDRESS TEXT NOT NULL
+);
+INSERT INTO EMPLOYEE VALUES(
+	1,
+	"Fauzan Pahlawan",
+	"CEO",
+	"Toronto, Canada"
+);
+INSERT INTO EMPLOYEE VALUES(
+	2,
+	"Edward Elric",
+	"CIO",
+	"Resembool, Amestris"
+);
+INSERT INTO EMPLOYEE VALUES(
+	3,
+	"Winry Rockbell",
+	"Head Staff",
+	"Resembool, Amestris"
+);

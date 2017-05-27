@@ -26,6 +26,24 @@ class Lecture(Resource):
 class Login(Resource):
     def render_GET(self, request):
         return "Login page of student."
+
+
+class AdminPage(Resource):
+    def __init__(self, staff_name):
+        Resource.__init__(self)
+        self.staff_name = staff_name
+
+    def render_GET(self, request):
+        return "This is staff " + self.staff_name + "page."
+
+
+class Staff(Resource):
+    def render_GET(self, request):
+        return "All staff data here"
+
+    def getChild(self, name, request):
+        return AdminPage(str(name))
+
 # Enlist the resource
 # Create resource root
 root = Resource()
@@ -33,6 +51,7 @@ root.putChild('', Home())
 root.putChild('student', Student())
 root.putChild('lecture', Lecture())
 root.putChild('login', Login())
+root.putChild('staff', Staff())
 # Create site component
 site = server.Site(root)
 
